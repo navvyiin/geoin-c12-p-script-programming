@@ -1,0 +1,93 @@
+# Geospatial Data Processing Toolkit
+
+A reusable Python toolkit for common vector and raster geospatial processing tasks. It is designed as a small, modular package that can be used from Python or from the command line.
+
+## Features
+
+- Read vector datasets: Shapefile, GeoPackage, GeoJSON, FlatGeobuf and GeoParquet
+- Read raster datasets with Rasterio
+- Validate CRS and report mismatches
+- Reproject vector and raster datasets
+- Clip vector and raster datasets by a mask layer
+- Merge vector and raster datasets
+- Manage dataset metadata
+- Export vectors to Shapefile, GeoPackage, GeoJSON, FlatGeobuf and GeoParquet
+- Generate human-readable and machine-readable processing logs
+- Example workflow and synthetic sample datasets
+- Automated tests
+
+## Architecture
+
+```text
+geospatial_data_processing_toolkit/
+├── geotoolkit/
+│   ├── __init__.py          # Public package API
+│   ├── cli.py               # Command-line interface
+│   ├── core.py              # High-level orchestration API
+│   ├── io.py                # Dataset readers/writers
+│   ├── metadata.py          # Metadata extraction
+│   ├── operations.py        # CRS, clip, merge, reprojection operations
+│   └── logging_utils.py     # Processing logs
+├── sample_data/             # Synthetic vector/raster examples
+├── examples/                # Demonstration script
+├── docs/                    # Technical documentation and report
+├── tests/                   # Automated tests
+├── pyproject.toml
+└── README.md
+```
+
+## Installation
+
+Requires Python 3.10+.
+
+```bash
+python -m venv .venv
+# Windows PowerShell: .venv\\Scripts\\Activate.ps1
+# Linux/macOS: source .venv/bin/activate
+pip install -e .
+```
+
+## Quick start in Python
+
+```python
+from geotoolkit import GeoProcessor
+
+processor = GeoProcessor(log_path="logs/workflow.log")
+
+cities = processor.read_vector("sample_data/cities.geojson")
+mask = processor.read_vector("sample_data/study_area.geojson")
+
+processor.validate_crs(cities, expected="EPSG:4326")
+projected = processor.reproject_vector(cities, "EPSG:3857")
+clipped = processor.clip_vector(projected, processor.reproject_vector(mask, "EPSG:3857"))
+processor.export_vector(clipped, "outputs/cities_clipped.gpkg", layer="cities")
+processor.save_log("logs/workflow.json")
+```
+
+## Command line
+
+```bash
+geotool metadata sample_data/cities.geojson
+geotool validate-crs sample_data/cities.geojson --expected EPSG:4326
+geotool reproject sample_data/cities.geojson outputs/cities_3857.gpkg --crs EPSG:3857
+geotool clip sample_data/cities.geojson sample_data/study_area.geojson outputs/cities_clipped.gpkg
+geotool merge sample_data/cities.geojson sample_data/points_extra.geojson --output outputs/merged.gpkg
+```
+
+## Demonstration
+
+Run:
+
+```bash
+python examples/demo_workflow.py
+```
+
+This creates a complete workflow using synthetic data, including CRS validation, reprojection, clipping, merging, raster clipping, metadata extraction, multiple vector exports and processing logs.
+
+## Design principles
+
+The package keeps the actual geospatial operations in `operations.py`, file-format handling in `io.py`, metadata handling in `metadata.py`, and workflow orchestration in `core.py`. This makes the toolkit easy to extend without turning it into one large script.
+
+## Academic deliverables covered
+
+The project directly implements the requested deliverables from Exercise 1: a modular Python package, technical documentation, sample datasets, a reproducible demonstration workflow and generated processing logs.
