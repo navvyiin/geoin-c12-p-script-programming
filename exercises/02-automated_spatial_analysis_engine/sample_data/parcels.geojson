@@ -1,0 +1,23 @@
+{
+"type": "FeatureCollection",
+"name": "parcels",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "parcel_id": 1, "land_value": 40, "road_distance": 0.002, "elevation": 890 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.54, 12.94 ], [ 77.56, 12.94 ], [ 77.56, 12.956 ], [ 77.54, 12.956 ], [ 77.54, 12.94 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 2, "land_value": 43, "road_distance": 0.004, "elevation": 888 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.54, 12.96 ], [ 77.56, 12.96 ], [ 77.56, 12.976 ], [ 77.54, 12.976 ], [ 77.54, 12.96 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 3, "land_value": 46, "road_distance": 0.006, "elevation": 886 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.54, 12.98 ], [ 77.56, 12.98 ], [ 77.56, 12.996 ], [ 77.54, 12.996 ], [ 77.54, 12.98 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 4, "land_value": 49, "road_distance": 0.008, "elevation": 884 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.54, 13.0 ], [ 77.56, 13.0 ], [ 77.56, 13.016 ], [ 77.54, 13.016 ], [ 77.54, 13.0 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 5, "land_value": 50, "road_distance": 0.004, "elevation": 895 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.564, 12.94 ], [ 77.584, 12.94 ], [ 77.584, 12.956 ], [ 77.564, 12.956 ], [ 77.564, 12.94 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 6, "land_value": 53, "road_distance": 0.006, "elevation": 893 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.564, 12.96 ], [ 77.584, 12.96 ], [ 77.584, 12.976 ], [ 77.564, 12.976 ], [ 77.564, 12.96 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 7, "land_value": 56, "road_distance": 0.008, "elevation": 891 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.564, 12.98 ], [ 77.584, 12.98 ], [ 77.584, 12.996 ], [ 77.564, 12.996 ], [ 77.564, 12.98 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 8, "land_value": 59, "road_distance": 0.002, "elevation": 889 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.564, 13.0 ], [ 77.584, 13.0 ], [ 77.584, 13.016 ], [ 77.564, 13.016 ], [ 77.564, 13.0 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 9, "land_value": 60, "road_distance": 0.006, "elevation": 900 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.588, 12.94 ], [ 77.608, 12.94 ], [ 77.608, 12.956 ], [ 77.588, 12.956 ], [ 77.588, 12.94 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 10, "land_value": 63, "road_distance": 0.008, "elevation": 898 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.588, 12.96 ], [ 77.608, 12.96 ], [ 77.608, 12.976 ], [ 77.588, 12.976 ], [ 77.588, 12.96 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 11, "land_value": 66, "road_distance": 0.002, "elevation": 896 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.588, 12.98 ], [ 77.608, 12.98 ], [ 77.608, 12.996 ], [ 77.588, 12.996 ], [ 77.588, 12.98 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 12, "land_value": 69, "road_distance": 0.004, "elevation": 894 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.588, 13.0 ], [ 77.608, 13.0 ], [ 77.608, 13.016 ], [ 77.588, 13.016 ], [ 77.588, 13.0 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 13, "land_value": 70, "road_distance": 0.008, "elevation": 905 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.612, 12.94 ], [ 77.632, 12.94 ], [ 77.632, 12.956 ], [ 77.612, 12.956 ], [ 77.612, 12.94 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 14, "land_value": 73, "road_distance": 0.002, "elevation": 903 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.612, 12.96 ], [ 77.632, 12.96 ], [ 77.632, 12.976 ], [ 77.612, 12.976 ], [ 77.612, 12.96 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 15, "land_value": 76, "road_distance": 0.004, "elevation": 901 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.612, 12.98 ], [ 77.632, 12.98 ], [ 77.632, 12.996 ], [ 77.612, 12.996 ], [ 77.612, 12.98 ] ] ] } },
+{ "type": "Feature", "properties": { "parcel_id": 16, "land_value": 79, "road_distance": 0.006, "elevation": 899 }, "geometry": { "type": "Polygon", "coordinates": [ [ [ 77.612, 13.0 ], [ 77.632, 13.0 ], [ 77.632, 13.016 ], [ 77.612, 13.016 ], [ 77.612, 13.0 ] ] ] } }
+]
+}

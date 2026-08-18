@@ -1,0 +1,11 @@
+{
+"type": "FeatureCollection",
+"name": "facilities_batch_2",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "facility": "A", "type": "hospital", "batch_id": 2 }, "geometry": { "type": "Point", "coordinates": [ 77.58, 12.96 ] } },
+{ "type": "Feature", "properties": { "facility": "B", "type": "school", "batch_id": 2 }, "geometry": { "type": "Point", "coordinates": [ 77.6, 12.975 ] } },
+{ "type": "Feature", "properties": { "facility": "C", "type": "hospital", "batch_id": 2 }, "geometry": { "type": "Point", "coordinates": [ 77.56, 12.99 ] } },
+{ "type": "Feature", "properties": { "facility": "D", "type": "school", "batch_id": 2 }, "geometry": { "type": "Point", "coordinates": [ 77.62, 12.95 ] } }
+]
+}
