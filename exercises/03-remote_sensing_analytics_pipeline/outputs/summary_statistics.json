@@ -1,0 +1,68 @@
+{
+  "source_raster": "sample_data\\scene_2024.tif",
+  "shape": [
+    120,
+    120
+  ],
+  "crs": "EPSG:32643",
+  "ndvi_stats": {
+    "count": 14400,
+    "min": -0.7679453492164612,
+    "max": 0.8992605805397034,
+    "mean": 0.331651896238327,
+    "median": 0.12018189579248428,
+    "std": 0.3712005913257599
+  },
+  "ndwi_stats": {
+    "count": 14400,
+    "min": -0.47588273882865906,
+    "max": 0.8739376068115234,
+    "mean": -0.2158202826976776,
+    "median": -0.22984012961387634,
+    "std": 0.23686689138412476
+  },
+  "class_area_statistics": [
+    {
+      "class_id": 1,
+      "pixel_count": 1005,
+      "area_m2": 100500.0,
+      "area_ha": 10.05,
+      "percentage": 6.979166666666667
+    },
+    {
+      "class_id": 2,
+      "pixel_count": 5475,
+      "area_m2": 547500.0,
+      "area_ha": 54.75,
+      "percentage": 38.02083333333333
+    },
+    {
+      "class_id": 3,
+      "pixel_count": 2881,
+      "area_m2": 288100.0,
+      "area_ha": 28.81,
+      "percentage": 20.006944444444443
+    },
+    {
+      "class_id": 4,
+      "pixel_count": 5039,
+      "area_m2": 503900.0,
+      "area_ha": 50.39,
+      "percentage": 34.99305555555556
+    }
+  ],
+  "change_detection": {
+    "changed_pixels": 1890,
+    "changed_area_ha": 18.9,
+    "transition_matrix": {
+      "4->4": 4825,
+      "3->4": 214,
+      "3->3": 2654,
+      "4->3": 227,
+      "1->1": 1005,
+      "2->2": 4026,
+      "4->2": 1440,
+      "3->2": 9
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remote-sensing-analytics-pipeline"
+version = "1.0.0"
+description = "A reproducible Python pipeline for introductory Earth observation analytics."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "rasterio>=1.3", "scikit-learn>=1.3", "matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+spatial-engine-rs = "rs_pipeline.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+include = ["rs_pipeline*"]
