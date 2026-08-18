@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interactive-geospatial-dashboard"
+version = "1.0.0"
+description = "A Streamlit-based interactive geospatial visualization dashboard."
+requires-python = ">=3.10"
+dependencies = [
+  "streamlit>=1.35",
+  "geopandas>=0.14",
+  "shapely>=2.0",
+  "folium>=0.16",
+  "streamlit-folium>=0.20",
+  "plotly>=5.20",
+  "pandas>=2.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+include = ["app*"]
