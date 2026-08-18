@@ -1,0 +1,12 @@
+{
+"type": "FeatureCollection",
+"name": "places_nearest_distance",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "place_id": 1, "name": "Central", "population": 12000, "category": "Priority Urban", "nearest_distance_m": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 77.59, 12.97 ] } },
+{ "type": "Feature", "properties": { "place_id": 2, "name": "North", "population": 8500, "category": "Urban", "nearest_distance_m": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 77.585, 13.01 ] } },
+{ "type": "Feature", "properties": { "place_id": 3, "name": "South", "population": 6400, "category": "Suburban", "nearest_distance_m": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 77.575, 12.925 ] } },
+{ "type": "Feature", "properties": { "place_id": 4, "name": "East", "population": 9100, "category": "Urban", "nearest_distance_m": 0.0 }, "geometry": { "type": "Point", "coordinates": [ 77.615, 12.97 ] } },
+{ "type": "Feature", "properties": { "place_id": 5, "name": "West", "population": 5300, "category": "Rural", "nearest_distance_m": 2171.1168666831682 }, "geometry": { "type": "Point", "coordinates": [ 77.52, 12.965 ] } }
+]
+}

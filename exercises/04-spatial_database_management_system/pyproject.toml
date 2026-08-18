@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spatial-database-management-system"
+version = "1.0.0"
+description = "A Python application for introductory spatial database management."
+requires-python = ">=3.10"
+dependencies = [
+  "geopandas>=0.14",
+  "shapely>=2.0",
+  "fiona>=1.9",
+  "sqlalchemy>=2.0"
+]
+
+[project.optional-dependencies]
+postgis = [
+  "geoalchemy2>=0.14",
+  "psycopg[binary]>=3.1"
+]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5"
+]
+
+[project.scripts]
+spatial-db = "spatial_db.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.packages.find]
+include = ["spatial_db*"]

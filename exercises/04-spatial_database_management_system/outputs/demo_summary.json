@@ -1,0 +1,13 @@
+{
+  "database": "D:\\geospatial_data_processing_toolkit\\exercises\\04-spatial_database_management_system\\outputs\\spatial_database.gpkg",
+  "imported_places": 5,
+  "imported_zones": 3,
+  "attribute_query_matches": 3,
+  "attribute_query_output": "D:\\geospatial_data_processing_toolkit\\exercises\\04-spatial_database_management_system\\outputs\\high_population_places.geojson",
+  "spatial_query_matches": 4,
+  "spatial_query_output": "D:\\geospatial_data_processing_toolkit\\exercises\\04-spatial_database_management_system\\outputs\\places_intersecting_zones.geojson",
+  "records_updated": 1,
+  "nearest_output": "D:\\geospatial_data_processing_toolkit\\exercises\\04-spatial_database_management_system\\outputs\\places_nearest_distance.geojson",
+  "layer_count": 2,
+  "status": "completed"
+}

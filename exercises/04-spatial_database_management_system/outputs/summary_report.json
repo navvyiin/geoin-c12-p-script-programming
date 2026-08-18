@@ -1,0 +1,44 @@
+{
+  "database": "D:\\geospatial_data_processing_toolkit\\exercises\\04-spatial_database_management_system\\outputs\\spatial_database.gpkg",
+  "layers": [
+    {
+      "layer": "zones",
+      "feature_count": 3,
+      "columns": [
+        "zone_id",
+        "zone_name",
+        "priority"
+      ],
+      "crs": "EPSG:4326",
+      "bounds": [
+        77.54,
+        12.89,
+        77.63,
+        13.05
+      ],
+      "geometry_types": {
+        "Polygon": 3
+      }
+    },
+    {
+      "layer": "places",
+      "feature_count": 5,
+      "columns": [
+        "place_id",
+        "name",
+        "population",
+        "category"
+      ],
+      "crs": "EPSG:4326",
+      "bounds": [
+        77.52,
+        12.925,
+        77.615,
+        13.01
+      ],
+      "geometry_types": {
+        "Point": 5
+      }
+    }
+  ]
+}
